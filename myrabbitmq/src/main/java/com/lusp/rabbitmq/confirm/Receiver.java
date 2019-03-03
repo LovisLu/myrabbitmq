@@ -10,7 +10,7 @@ import com.rabbitmq.client.DefaultConsumer;
 import com.rabbitmq.client.Envelope;
 import com.rabbitmq.client.AMQP.BasicProperties;
 /**
- * 
+ * 接受者
  * @author Administrator
  *
  */
