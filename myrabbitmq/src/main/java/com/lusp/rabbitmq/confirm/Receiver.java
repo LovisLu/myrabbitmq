@@ -9,7 +9,11 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.DefaultConsumer;
 import com.rabbitmq.client.Envelope;
 import com.rabbitmq.client.AMQP.BasicProperties;
-
+/**
+ * 
+ * @author Administrator
+ *
+ */
 public class Receiver {
 
 	public static final String QUEUE_NAME = "test_queue_confirm";
