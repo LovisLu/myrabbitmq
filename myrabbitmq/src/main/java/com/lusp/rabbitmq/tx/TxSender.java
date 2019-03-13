@@ -22,6 +22,7 @@ public class TxSender {
 		String msg = "hello tx message!";
 		
 		try {
+			//开启事务
 			channel.txSelect();
 			
 			msg += 1/0;
@@ -30,10 +31,12 @@ public class TxSender {
 			
 			System.out.println("---send tx message!");
 			
+			//提交事务
 			channel.txCommit();
 			
 		} catch (Exception e) {
 			
+			//回滚
 			channel.txRollback();
 			
 			System.out.println("send message rollback!");
